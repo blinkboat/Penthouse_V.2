@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewData["Title"] - Thailand Penthouse</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Themesdesign" />
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="~/Scripts/css/Theme/bootstrap.min.css" type="text/css">
+
+    <!--Material Icon -->
+    <link rel="stylesheet" type="text/css" href="~/Scripts/css/materialdesignicons.min.css" />
+
+    <!-- Pe-icon-7 icon -->
+    <link rel="stylesheet" type="text/css" href="~/Scripts/css/Pe-icon-7-stroke.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="~/Scripts/css/swiper.min.css">
+
+    <!--Slider-->
+    <link rel="stylesheet" href="~/Scripts/css/owl.carousel.css" />
+    <link rel="stylesheet" href="~/Scripts/css/owl.theme.css" />
+    <link rel="stylesheet" href="~/Scripts/css/owl.transitions.css" />
+
+    <link rel="stylesheet" type="text/css" href="~/Scripts/css/magnific-popup.css" />
+
+    <!-- Custom  Css -->
+    <link rel="stylesheet" type="text/css" href="~/Scripts/css/style.css" />
+
+</head>
+
+<body>
+
+    <!--Navbar Start-->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark">
+        <div class="container">
+            <!-- LOGO -->
+            <a class="navbar-brand logo text-uppercase" href="index.html">
+                <img src="~/images/LogoAndIcon/Logo1.png" class="logo-dark" alt="" height="70">
+                <img src="~/images/LogoAndIcon/Logo2.png" class="logo-light" alt="" height="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="mdi mdi-menu"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
+                    <li class="nav-item active">
+                        <a href="/PenthouseHome/#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/PenthouseHome/#about" class="nav-link">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/PenthouseHome/#OURPENTHOUSES" class="nav-link">OUR PENTHOUSES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/PenthouseHome/#counter" class="nav-link">CONTACT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="http://www.bridgethailand.com/" class="nav-link">BRIDGE THAILAND</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+    @RenderBody()
+
+    @Html.Partial("~/Views/PartialView/_ContactUS.cshtml")
+
+    <footer class="section agency-bg-footer pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                </div>
+                <div class="col-lg-3">
+                    <h3 class="footer-heading text-uppercase font-weight-bold f-13">RESOURCES</h3>
+                    <ul class="list-unstyled footer-link mt-3 mb-0 f-10">
+                        <li><a href="">HOW TO BUY PROPERTY IN THAILAND</a></li>
+
+                        <li><a href="@Url.Action("_THAI_REAL_ESTATE_LAWS", "Law")">THAI REAL ESTATE LAWS</a></li>
+                        <li><a href="@Url.Action("_THAI_TAX_LAWS", "Law")">THAI TAX LAWS</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-1">
+                </div>
+                <div class="col-lg-5 align-self-center">
+                    <i class="fab fa-facebook fa-2x" style="color:white"></i>
+                    <i class="fab fa-instagram fa-2x" style="color:white"></i>
+                    <i class="fab fa-twitter fa-2x" style="color:white"></i>
+                    <i class="fab fa-linkedin fa-2x" style="color:white"></i>
+                    <i class="fab fa-whatsapp fa-2x" style="color:white"></i>
+                    <i class="fab fa-line fa-2x" style="color:white"></i>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="~/Scripts/js/Theme/jquery.min.js"></script>
+    <script src="~/Scripts/js/Theme/popper.min.js"></script>
+    <script src="~/Scripts/js/Theme/bootstrap.min.js"></script>
+    <script src="~/Scripts/js/Theme/jquery.easing.min.js"></script>
+    <script src="~/Scripts/js/Theme/scrollspy.min.js"></script>
+    <script src="~/Scripts/js/Theme/owl.carousel.min.js"></script>
+    <script src="~/Scripts/js/Theme/jquery.magnific-popup.min.js"></script>
+    <script src="~/Scripts/js/Theme/swiper.min.js"></script>
+    <script src="~/Scripts/js/Theme/counter.init.js"></script>
+    <script src="~/Scripts/js/Theme/isotope.pkgd.min.js"></script>
+    <script src="~/Scripts/js/Theme/masonry.pkgd.min.js"></script>
+    <script src="~/Scripts/js/Theme/app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN4udOGkjQRy4L8aUKxPAxGW5oQ_p9z-k&callback=myMap"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            if (location.pathname != "/PenthouseHome/") {
+                $(".sticky").addClass("nav-sticky");
+
+            } else if (location.pathname == 'Law/_THAI_REAL_ESTATE_LAWS') {
+                $(".sticky").addClass("nav-sticky");
+            }
+        });
+    </script>
+</body>
+</html>
