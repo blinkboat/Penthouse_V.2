@@ -7,7 +7,7 @@
 // STICKY
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
-    if (location.pathname === "/PenthouseHome/#home") {
+    if (this.window.location.href.indexOf("PenthouseHome") > -1) {
         if (scroll >= 50) {
             $(".sticky").addClass("nav-sticky");
         }
