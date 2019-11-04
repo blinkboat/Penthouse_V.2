@@ -7,7 +7,7 @@
 // STICKY
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
-    if (location.pathname == "/PenthouseHome/#home") {
+    if (location.pathname === "/PenthouseHome/#home") {
         if (scroll >= 50) {
             $(".sticky").addClass("nav-sticky");
         }
@@ -39,7 +39,6 @@ $("#navbarCollapse").scrollspy({
 $("#agency-owl-demo").owlCarousel({
     autoPlay: 3000,
     stopOnHover: true,
-    navigation: false,
     paginationSpeed: 1000,
     goToFirstSpeed: 2000,
     singleItem: true,
@@ -166,16 +165,16 @@ $('#contact-form').submit(function() {
         $.post(action, {
                 name: $('#name').val(),
                 email: $('#email').val(),
-                comments: $('#comments').val(),
+                comments: $('#comments').val()
             },
             function(data) {
                 document.getElementById('message').innerHTML = data;
                 $('#message').slideDown('slow');
                 $('#cform img.contact-loader').fadeOut('slow', function() {
-                    $(this).remove()
+                    $(this).remove();
                 });
                 $('#submit').removeAttr('disabled');
-                if (data.match('success') != null) $('#cform').slideUp('slow');
+                if (data.match('success') !== null) $('#cform').slideUp('slow');
             }
         );
 
@@ -226,6 +225,6 @@ var swiper = new Swiper('.swiper-container', {
         depth: 200,
         modifier: 1,
         slideShadows: false,
-        slidesPerView: 3,
+        slidesPerView: 3
     }
-})
+});
