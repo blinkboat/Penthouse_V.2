@@ -800,8 +800,10 @@
     <Content Include="Views\ProjectDetails\MONUMENTTHONGLO.cshtml" />
     <Content Include="Views\ProjectDetails\BEATNIQ.cshtml" />
     <Content Include="Views\ProjectDetails\SCOPELANGSUAN.cshtml" />
-    <Content Include="Views\ProjectDetails\HYDESUKHUMVIT.cshtml" />
     <Content Include="Views\ProjectDetails\SALADAENGONE.cshtml" />
+    <Content Include="Views\ProjectDetails\MThonglor10.cshtml" />
+    <Content Include="Views\ProjectDetails\HYDESUKHUMVIT11.cshtml" />
+    <Content Include="Views\ProjectDetails\HYDESUKHUMVIT13.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
