@@ -9,7 +9,7 @@ namespace Penthouse.Controllers
     public class ProjectDetailsController : Controller
     {
         // GET: ProjectDetails
-        public ActionResult Index()
+        public ActionResult Index(string text)
         {
             return View();
         }
