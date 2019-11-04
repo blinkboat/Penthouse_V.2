@@ -29,7 +29,7 @@
                                             <h4 class="agency-home-title text-uppercase mt-4 letter-spacing_6">98 WIRELESS</h4>
 
                                             <div class="mt-5">
-                                                <a href="~/ProjectDetails/WIRELESS" class="btn btn-custom">ABOUT PROJECT</a>
+                                                <a href="~/Views/ProjectDetails/98WIRELESS.cshtml" class="btn btn-custom">ABOUT PROJECT</a>
                                             </div>
 
                                         </div>
@@ -52,7 +52,7 @@
                                             <h4 class="agency-home-title text-uppercase mt-4 letter-spacing_6">KHUN BY YOU</h4>
 
                                             <div class="mt-5">
-                                                <a href="~/ProjectDetails/KHUNBYYOU" class="btn btn-custom">ABOUT PROJECT</a>
+                                                <a href="~/Views/ProjectDetails/KHUNBYYOU.cshtml" class="btn btn-custom">ABOUT PROJECT</a>
                                             </div>
 
                                         </div>
@@ -75,7 +75,7 @@
                                             <h4 class="agency-home-title text-uppercase mt-4 letter-spacing_6">ROYLA THAI VILLAS PHUKET</h4>
 
                                             <div class="mt-5">
-                                                <a href="~/ProjectDetails/ROYALTHAIVILLAS" class="btn btn-custom">ABOUT PROJECT</a>
+                                                <a href="~/Views/ProjectDetails/ROYALTHAIVILLAS.cshtml" class="btn btn-custom">ABOUT PROJECT</a>
                                             </div>
 
                                         </div>
@@ -100,8 +100,6 @@
     </div>
 
 </section>
-<!-- END AGENCY-HOME -->
-<!-- START ABOUT -->
 <section class="section" id="about">
     <div class="container">
         <div class="row justify-content-center">
@@ -139,26 +137,29 @@
 
     </div>
 </section>
-<!-- END ABOUT -->
-<!-- STRAT SERVICES -->
-<!-- START WORK -->
-<!-- START WORK -->
+
+
 <section class="section" id="OURPENTHOUSES">
     <div class="container">
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="blog-post-box text-center mt-3">
+                    <div class="post-standard-title">
+                        <div class="post-img mt-3">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="home-title text-center ">
                     <h2 class="home-title-title letter-spacing_4 text-uppercase">OUR PENTHOUSES</h2>
-                        <div class="home-title-desc text-muted mt-4 text-left">
-                            <div class="input-group">
-                                <div class="custom-file">
-                                    <input type="file" class="custom-file-input" id="validatedCustomFile">
-                                    <label class="custom-file-label" for="validatedCustomFile" >SEARCH</label>
 
-                                </div>
 
-                            </div>
-                        </div>
                 </div>
             </div>
         </div>
@@ -166,10 +167,11 @@
         <!-- portfolio menu -->
         <div class="row justify-content-center mt-5 pt-3">
             <ul class="col container-filter categories-filter portfolioFilter mb-0" id="filter">
-                <li><a class="categories active current" data-filter="*">BANGKOK</a></li>
-                <li><a class="categories" data-filter=".web">PHUKET</a></li>
-                <li><a class="categories" data-filter=".desktop">CHIANG MAI</a></li>
-               
+                <li><a class="categories active current" data-filter="*">All</a></li>
+                <li><a class="categories" data-filter=".bangkok">BANGKOK</a></li>
+                <li><a class="categories" data-filter=".phuket">PHUKET</a></li>
+                <li><a class="categories" data-filter=".chiangmai">CHIANG MAI</a></li>
+
             </ul>
         </div>
         <!-- End portfolio  -->
@@ -178,16 +180,17 @@
     <!-- Gallary -->
     <div class="container">
         <div class="row justify-content-center mt-5 portfolioContainer">
-            <div class="col-lg-4 nf-item p-0 web desktop css">
+
+            <div class="col-lg-4 nf-item p-0 bangkok desktop css">
                 <div class="gallary-box m-3">
                     <a class="mfp-image" href="/ProjectDetails/MONUMENTTHONGLO" title="">
-                        <img class="gallary-container" src="~/Scripts/images/Theme/blog/blog-1.jpg" alt="" />
+                        <img class="gallary-container" src="~/Scripts/images/img_Project/TheMonumentThonglor/Materials-for-TP-THMNMTL-Homepage2.jpg" alt="" />
                         <p class="text-muted text-uppercase f-12 mb-0 mt-2 text-center">THE Monument thong lo</p>
                     </a>
                 </div>
             </div>
 
-            <div class="col-lg-4 nf-item p-0 desktop web css">
+            <div class="col-lg-4 nf-item p-0 desktop bangkok css">
                 <div class="gallary-box m-3">
                     <a class="mfp-image" href="/ProjectDetails/BEATNIQ" title="">
                         <img class="gallary-container" src="~/Scripts/images/Theme/blog/blog-1.jpg" alt="" />
@@ -196,7 +199,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 nf-item p-0 php desktop html">
+            <div class="col-lg-4 nf-item p-0 bangkok desktop html">
                 <div class="gallary-box m-3">
                     <a class="mfp-image" href="/ProjectDetails/SCOPELANGSUAN" title="">
                         <img class="gallary-container" src="~/Scripts/images/Theme/blog/blog-1.jpg" alt="" />
@@ -205,7 +208,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 nf-item p-0 desktop web">
+            <div class="col-lg-4 nf-item p-0 desktop bangkok">
                 <div class="gallary-box m-3">
                     <a class="mfp-image" href="/ProjectDetails/KHUNBYYOU" title="">
                         <img class="gallary-container" src="~/Scripts/images/Theme/blog/blog-1.jpg" alt="" />
@@ -214,7 +217,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 nf-item p-0 web html php">
+            <div class="col-lg-4 nf-item p-0 web html bangkok">
                 <div class="gallary-box m-3">
                     <a class="mfp-image" href="/ProjectDetails/HYDESUKHUMVIT" title="">
                         <img class="gallary-container" src="~/Scripts/images/Theme/blog/blog-1.jpg" alt="5" />
@@ -223,9 +226,9 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 nf-item p-0 php desktop html">
+            <div class="col-lg-4 nf-item p-0 php desktop html chiangmai">
                 <div class="gallary-box m-3">
-                    <a class="mfp-image" href="/ProjectDetails/SALADAENGONE" onclick="ChangLocation()" title="">
+                    <a class="mfp-image" href="/ProjectDetails/SALADAENGONE" title="">
                         <img class="gallary-container" src="~/Scripts/images/Theme/blog/blog-1.jpg" alt="6" />
                         <p class="text-muted text-uppercase f-12 mb-0 mt-2 text-center">SALADAENG ONE</p>
                     </a>
@@ -236,16 +239,11 @@
     </div>
     <!-- End  Gallary -->
 </section>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN4udOGkjQRy4L8aUKxPAxGW5oQ_p9z-k&callback=myMap"></script>
+@Html.Partial("~/Views/PartialView/_ContactUS.cshtml")
+
+
 <script type="text/javascript">
-    function ChangLocation() {
-        // return true or false, depending on whether you want to allow the `href` property to follow through or not
-        
-    }
-    $("#myHref").on('click', function (event) {
-        //event.preventDefault();
-        //document.getElementById(".myDiv").style.flexGrow = "5";
-        //window.location = "http://www.google.com";
-        alert("555");
+    $(function () {
+        alert("ready!");
     });
 </script>

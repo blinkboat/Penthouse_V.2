@@ -9,7 +9,7 @@ namespace Penthouse.Controllers
     public class ProjectDetailsController : Controller
     {
         // GET: ProjectDetails
-        public ActionResult Index(string text)
+        public ActionResult Index()
         {
             return View();
         }
@@ -23,7 +23,7 @@ namespace Penthouse.Controllers
         }
         public ActionResult Wireless()
         {
-            return View(); 
+            return View();
         }
         public ActionResult MONUMENTTHONGLO()
         {
@@ -35,13 +35,21 @@ namespace Penthouse.Controllers
         }
         public ActionResult SCOPELANGSUAN()
         {
-            return View(); 
+            return View();
         }
-        public ActionResult HYDESUKHUMVIT()
+        public ActionResult HYDESUKHUMVIT11()
         {
             return View();
         }
         public ActionResult SALADAENGONE()
+        {
+            return View();
+        }
+        public ActionResult HYDESUKHUMVIT13()
+        {
+            return View();
+        }
+        public ActionResult MThonglor10()
         {
             return View();
         }

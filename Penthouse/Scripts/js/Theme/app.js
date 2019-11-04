@@ -128,6 +128,7 @@ $(window).on('load', function () {
     });
 
     $('.portfolioFilter a').click(function () {
+        console.log('1');
         $('.portfolioFilter .current').removeClass('current');
         $(this).addClass('current');
 

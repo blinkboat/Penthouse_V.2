@@ -30,7 +30,7 @@
 }
 
 body {
-    font-family: "ElliotSans Light";
+    font-family: "ElliotSans Light , sans-serif";
     letter-spacing: 1px;
     color: #323232;
     font-size: 16px;
@@ -42,7 +42,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "ElliotSans Bold";
+    font-family: "ElliotSans Light , sans-serif";
     font-weight: 600;
 }
 
