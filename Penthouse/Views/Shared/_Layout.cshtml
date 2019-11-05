@@ -84,7 +84,7 @@
                 <div class="col-lg-3">
                     <h3 class="footer-heading text-uppercase font-weight-bold f-13">RESOURCES</h3>
                     <ul class="list-unstyled footer-link mt-3 mb-0 f-10">
-                        <li><a href="">HOW TO BUY PROPERTY IN THAILAND</a></li>
+                        <li><a href="@Url.Action("index", "HowToBuy")">HOW TO BUY PROPERTY IN THAILAND</a></li>
 
                         <li><a href="@Url.Action("_THAI_REAL_ESTATE_LAWS", "Law")">THAI REAL ESTATE LAWS</a></li>
                         <li><a href="@Url.Action("_THAI_TAX_LAWS", "Law")">THAI TAX LAWS</a></li>
@@ -132,11 +132,12 @@
     <script src="https://kit.fontawesome.com/2ccd19fe27.js" crossorigin="anonymous"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            if (location.pathname != "/PenthouseHome/") { 
+            if (location.pathname != "/PenthouseHome/") {
                 $(".sticky").addClass("nav-sticky");
             } else if (location.pathname == 'Law/_THAI_REAL_ESTATE_LAWS') {
                 $(".sticky").addClass("nav-sticky");
-            }
+               
+            } 
             var $container = $('.portfolioContainer');
             $container.isotope({
                 filter: '*',

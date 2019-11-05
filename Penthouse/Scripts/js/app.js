@@ -14,8 +14,10 @@ $(window).scroll(function() {
         else {
             $(".sticky").removeClass("nav-sticky");
         }
+       
     } else {
-        $(".sticky").addClass("nav-sticky");
+
+            $(".sticky").addClass("nav-sticky");
     }
     
 });

@@ -119,6 +119,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HowToBuyController.cs" />
     <Compile Include="Controllers\LawController.cs" />
     <Compile Include="Controllers\PenthouseHomeController.cs" />
     <Compile Include="Controllers\ProjectDetailsController.cs" />
@@ -140,6 +141,9 @@
     <Content Include="images\banner1.svg" />
     <Content Include="images\banner2.svg" />
     <Content Include="images\banner3.svg" />
+    <Content Include="images\HowToBuy\Thailand-Penthouse-How-to-buy-property1.jpg" />
+    <Content Include="images\HowToBuy\Thailand-Penthouse-How-to-buy-property2.jpg" />
+    <Content Include="images\HowToBuy\Thailand-Penthouse-How-to-buy-property3.jpg" />
     <Content Include="images\img_Project\98WIRELESS\Materials-for-TP-98Wireless-Header.jpg" />
     <Content Include="images\img_Project\98WIRELESS\Materials-for-TP-98Wireless-Homepage1.jpg" />
     <Content Include="images\img_Project\98WIRELESS\Materials-for-TP-98Wireless-Homepage2.jpg" />
@@ -737,6 +741,7 @@
     <Content Include="Views\ProjectDetails\MThonglor10.cshtml" />
     <Content Include="Views\ProjectDetails\HYDESUKHUMVIT11.cshtml" />
     <Content Include="Views\ProjectDetails\HYDESUKHUMVIT13.cshtml" />
+    <Content Include="Views\HowToBuy\index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
