@@ -10,14 +10,17 @@ $(window).scroll(function() {
     if (this.window.location.href.indexOf("PenthouseHome") > -1) {
         if (scroll >= 50) {
             $(".sticky").addClass("nav-sticky");
+            alert('3');
         }
         else {
             $(".sticky").removeClass("nav-sticky");
+            alert('4');
         }
        
     } else {
 
-            $(".sticky").addClass("nav-sticky");
+        $(".sticky").addClass("nav-sticky");
+        alert('5');
     }
     
 });

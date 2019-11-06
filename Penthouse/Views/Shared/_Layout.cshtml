@@ -134,9 +134,11 @@
         $(document).ready(function () {
             if (location.pathname != "/PenthouseHome/") {
                 $(".sticky").addClass("nav-sticky");
-            } else if (location.pathname == 'Law/_THAI_REAL_ESTATE_LAWS') {
-                $(".sticky").addClass("nav-sticky");
-               
+             
+            }
+            if (location.pathname == '/') {
+                $(".sticky").removeClass("nav-sticky");
+              
             } 
             var $container = $('.portfolioContainer');
             $container.isotope({
