@@ -70,31 +70,56 @@
 </section>
 <script>
     function myMap() {
-        var uluru = { lat: 13.7165576, lng: 100.5795238 };
+        var uluru = null;
+        var title = null;
+        if (this.window.location.href.indexOf("MONUMENTTHONGLO") > -1) {
+            uluru = { lat: 13.741816, lng: 100.5832273 }
+            title = "THE MONUMENT THONGLOR";
+        }
+        else if (this.window.location.href.indexOf("WIRELESS") > -1) {
+            uluru = { lat: 13.741616, lng: 100.546808 }
+            title = "98 WIRELESS";
+        }
+        else if (this.window.location.href.indexOf("BEATNIQ") > -1) {
+            uluru = { lat: 13.6680182, lng: 100.520846 }
+            title = "BEATNIQ";
+        }
+        else if (this.window.location.href.indexOf("SALADAENGONE") > -1) {
+            uluru = { lat: 13.7266751, lng: 100.5391719 }
+            title = "SALADAENG ONE";
+        }
+        else if (this.window.location.href.indexOf("MThonglor10") > -1) {
+            uluru = { lat: 13.7307726, lng: 100.5868107 };
+            title = "M THONGLOR 10";
+        }
+        else{
+            uluru = { lat: 13.7165576, lng: 100.5795238 };
+            title = "Bridge Group (Thailand)";
+        }
         //var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
         var map = new google.maps.Map(
             document.getElementById('googleMap'), { zoom: 15, center: uluru });
         // The marker, positioned at Uluru
         var marker = new google.maps.Marker({ position: uluru, map: map });
-        var contentString = '<div id="content">' +
-            '<div id="siteNotice">' +
-            '</div>' +
-            '<h3 id="firstHeading" class="firstHeading">Bridge Group (Thailand)</h3>' +
-            '<div id="bodyContent">' +
-            '<p>Address: Bridge Group (Thailand) ' +
-            'WeWork T-One Building 15th Floor, 8/2 Sukhumvit 40, Khlong Toei, ' +
-            'Bangkok, 10110 Thailand ' +
-            '</p>' +
-            '</div>' +
-            '</div>';
+        //var contentString = '<div id="content">' +
+        //    '<div id="siteNotice">' +
+        //    '</div>' +
+        //    '<h3 id="firstHeading" class="firstHeading">Bridge Group (Thailand)</h3>' +
+        //    '<div id="bodyContent">' +
+        //    '<p>Address: Bridge Group (Thailand) ' +
+        //    'WeWork T-One Building 15th Floor, 8/2 Sukhumvit 40, Khlong Toei, ' +
+        //    'Bangkok, 10110 Thailand ' +
+        //    '</p>' +
+        //    '</div>' +
+        //    '</div>';
 
-        var infowindow = new google.maps.InfoWindow({
-            content: contentString
-        });
+        //var infowindow = new google.maps.InfoWindow({
+        //    content: contentString
+        //});
         var marker = new google.maps.Marker({
             position: uluru,
             map: map,
-            title: 'Uluru (Ayers Rock)'
+            title: title
         });
         marker.addListener('click', function () {
             infowindow.open(map, marker);
