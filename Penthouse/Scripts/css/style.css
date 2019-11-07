@@ -50,11 +50,12 @@ h6 {
     height: 100vh;
     min-height: 350px;
     background: no-repeat center center scroll;
-    /*-webkit-background-size: cover;
+    -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;*/
+    -o-background-size: cover;
     background-size: cover;
 }
+
 
 a {
     text-decoration: none !important;
@@ -1354,6 +1355,7 @@ textarea.form-control {
         background-position: center center;
         background-size: cover;
     }
+
 
 .interior-home-subtitle {
     font-size: 24px;
