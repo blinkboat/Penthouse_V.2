@@ -134,12 +134,14 @@
         $(document).ready(function () {
             if (location.pathname != "/PenthouseHome/") {
                 $(".sticky").addClass("nav-sticky");
+               
              
             }
             if (location.pathname == '/') {
                 $(".sticky").removeClass("nav-sticky");
-              
+               
             } 
+          
             var $container = $('.portfolioContainer');
             $container.isotope({
                 filter: '*',
