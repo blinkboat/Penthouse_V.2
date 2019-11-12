@@ -15,11 +15,11 @@ namespace Penthouse.Controllers
             return View();
         }
 
-        public ActionResult MailAlert(string name, string email, string number, string prjname, string comments)
+        public ActionResult Thankyou(string name, string email, string number, string prjname, string comments)
         {
             EmailTemplate tp = new EmailTemplate();
             tp.MessageUs(name, email, number, prjname, comments);
-            return RedirectToAction("Thankyou", "Penthouse");
+            return View();
         }
     }
 }
