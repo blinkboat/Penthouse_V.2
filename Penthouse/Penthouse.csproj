@@ -160,6 +160,16 @@
     <Content Include="images\img_Project\98WIRELESS\Materials-for-TP-98Wireless7.jpg" />
     <Content Include="images\img_Project\98WIRELESS\Materials-for-TP-98Wireless8.jpg" />
     <Content Include="images\img_Project\98WIRELESS\Materials-for-TP-98Wireless9.jpg" />
+    <Content Include="images\img_Project\AESTIQ\Materials-for-TP-Aestiq-Header.jpg" />
+    <Content Include="images\img_Project\AESTIQ\Materials-for-TP-Aestiq-Homepage1.jpg" />
+    <Content Include="images\img_Project\AESTIQ\Materials-for-TP-Aestiq-Homepage2.jpg" />
+    <Content Include="images\img_Project\AESTIQ\Materials-for-TP-Aestiq-Neighborhood-Guide.jpg" />
+    <Content Include="images\img_Project\AESTIQ\Materials-for-TP-Aestiq-Our-Penthouse.jpg" />
+    <Content Include="images\img_Project\AESTIQ\Materials-for-TP-Aestiq-Project-details.jpg" />
+    <Content Include="images\img_Project\AESTIQ\Materials-for-TP-Aestiq1.jpg" />
+    <Content Include="images\img_Project\AESTIQ\Materials-for-TP-Aestiq2.jpg" />
+    <Content Include="images\img_Project\AESTIQ\Materials-for-TP-Aestiq3.jpg" />
+    <Content Include="images\img_Project\AESTIQ\Materials-for-TP-Aestiq4.jpg" />
     <Content Include="images\img_Project\BEATNIQ\Materials-for-TP-BNQ-G1.jpg" />
     <Content Include="images\img_Project\BEATNIQ\Materials-for-TP-BNQ-G2.jpg" />
     <Content Include="images\img_Project\BEATNIQ\Materials-for-TP-BNQ-G3.jpg" />
@@ -174,6 +184,26 @@
     <Content Include="images\img_Project\BEATNIQ\Materials-for-TP-BNQ-Neighborhood.jpg" />
     <Content Include="images\img_Project\BEATNIQ\Materials-for-TP-BNQ-Our-Penthouses.jpg" />
     <Content Include="images\img_Project\BEATNIQ\Materials-for-TP-BNQ-Project-Detail.jpg" />
+    <Content Include="images\img_Project\LAVIQ\Materials-for-TP-LAVIQ-Header.jpg" />
+    <Content Include="images\img_Project\LAVIQ\Materials-for-TP-LAVIQ-Homepage1.jpg" />
+    <Content Include="images\img_Project\LAVIQ\Materials-for-TP-LAVIQ-Homepage2.jpg" />
+    <Content Include="images\img_Project\LAVIQ\Materials-for-TP-LAVIQ-Neighborhood-guide.jpg" />
+    <Content Include="images\img_Project\LAVIQ\Materials-for-TP-LAVIQ-Our-penthouse.jpg" />
+    <Content Include="images\img_Project\LAVIQ\Materials-for-TP-LAVIQ-Project-details.jpg" />
+    <Content Include="images\img_Project\MARQUE\Materials-for-TP-Marque-Header.jpg" />
+    <Content Include="images\img_Project\MARQUE\Materials-for-TP-Marque-Homepage1.jpg" />
+    <Content Include="images\img_Project\MARQUE\Materials-for-TP-Marque-Homepage2.jpg" />
+    <Content Include="images\img_Project\MARQUE\Materials-for-TP-Marque-Neighborhood.jpg" />
+    <Content Include="images\img_Project\MARQUE\Materials-for-TP-Marque-Our-penthouse.jpg" />
+    <Content Include="images\img_Project\MARQUE\Materials-for-TP-Marque-Project-detail.jpg" />
+    <Content Include="images\img_Project\MARQUE\Materials-for-TP-Marque1.jpg" />
+    <Content Include="images\img_Project\MARQUE\Materials-for-TP-Marque2.jpg" />
+    <Content Include="images\img_Project\MARQUE\Materials-for-TP-Marque3.jpg" />
+    <Content Include="images\img_Project\MARQUE\Materials-for-TP-Marque4.jpg" />
+    <Content Include="images\img_Project\MARQUE\Materials-for-TP-Marque5.jpg" />
+    <Content Include="images\img_Project\MARQUE\Materials-for-TP-Marque6.jpg" />
+    <Content Include="images\img_Project\MARQUE\Materials-for-TP-Marque7.jpg" />
+    <Content Include="images\img_Project\MARQUE\Materials-for-TP-Marque8.jpg" />
     <Content Include="images\img_Project\MThonglor10\Materials-for-TP-M-Thonglor-G1.jpg" />
     <Content Include="images\img_Project\MThonglor10\Materials-for-TP-M-Thonglor-G10.jpg" />
     <Content Include="images\img_Project\MThonglor10\Materials-for-TP-M-Thonglor-G2.jpg" />
@@ -468,7 +498,6 @@
     <Content Include="Scripts\fonts\Pe-icon-7-stroke.ttf" />
     <Content Include="Scripts\fonts\Pe-icon-7-stroke.woff" />
     <Content Include="images\img_Project\98WIRELESS\.DS_Store" />
-    <Content Include="images\img_Project\BEATNIQ\.DS_Store" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -530,6 +559,9 @@
     <Content Include="Views\ProjectDetails\HYDESUKHUMVIT13.cshtml" />
     <Content Include="Views\HowToBuy\index.cshtml" />
     <Content Include="Views\PenthouseHome\Thankyou.cshtml" />
+    <Content Include="Views\ProjectDetails\MARQUESUKHUMVIT.cshtml" />
+    <Content Include="Views\ProjectDetails\LAVIQSUKHUMVIT57.cshtml" />
+    <Content Include="Views\ProjectDetails\AESTIQTHONGLOR.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

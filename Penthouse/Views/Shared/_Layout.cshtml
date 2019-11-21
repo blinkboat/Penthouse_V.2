@@ -131,14 +131,14 @@
     <script src="https://kit.fontawesome.com/2ccd19fe27.js" crossorigin="anonymous"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            if (location.pathname != "/PenthouseHome/") {
-                $(".sticky").addClass("nav-sticky");
-               
-             
-            }
-            if (location.pathname == '/') {
+            if (location.href == location.origin + '/') {
                 $(".sticky").removeClass("nav-sticky");
-               
+            }
+            else if (location.pathname != "/PenthouseHome/") {
+                $(".sticky").addClass("nav-sticky");
+            }
+            else {
+                $(".sticky").removeClass("nav-sticky");
             } 
           
             var $container = $('.portfolioContainer');

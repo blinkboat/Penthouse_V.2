@@ -53,5 +53,17 @@ namespace Penthouse.Controllers
         {
             return View();
         }
+        public ActionResult MARQUESUKHUMVIT()
+        {
+            return View();
+        }
+        public ActionResult LAVIQSUKHUMVIT57()
+        {
+            return View();
+        }
+        public ActionResult AESTIQTHONGLOR()
+        {
+            return View();
+        }
     }
 }
