@@ -19,119 +19,107 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <!-- Slide One - Set the background image for this slide in the line below -->
-                <div class="carousel-item" style="background-image:url(../../images/img_Project/98WIRELESS/Materials-for-TP-98Wireless-Homepage1.jpg)">
-                    <div class="home-center">
-                        <div class="home-desc-center">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="agency-home-content text-center  text-white">
-                                            <p class="agency-home-sub-title text-uppercase f-14 letter-spacing_4">BANGKOK</p>
-                                            <h4 class="agency-home-title text-uppercase mt-4 letter-spacing_6">98 WIRELESS</h4>
-                                            <div class="mt-5">
-                                                <a href="~/ProjectDetails/WIRELESS" target="_blank" class="btn btn-custom">ABOUT PROJECT</a>
+                @{
+                    var rowindex = 0;
+                    foreach (var item in Model)
+                    {
+                        if (rowindex == 0)
+                        {
+                            <div class="carousel-item active" style="background-image:url(@item.image_url)">
+                                <div class="home-center">
+                                    <div class="home-desc-center">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="agency-home-content text-center  text-white">
+                                                        <p class="agency-home-sub-title text-uppercase f-14 letter-spacing_4">@item.province</p>
+                                                        <h4 class="agency-home-title text-uppercase mt-4 letter-spacing_6">@item.projectname</h4>
+                                                        <div class="mt-5">
+                                                            <a href="@item.link" target="_blank" class="btn btn-custom">ABOUT PROJECT</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                        }
+                        else
+                        {
+                            <div class="carousel-item" style="background-image:url(@item.image_url)">
+                                <div class="home-center">
+                                    <div class="home-desc-center">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="agency-home-content text-center  text-white">
+                                                        <p class="agency-home-sub-title text-uppercase f-14 letter-spacing_4">@item.province</p>
+                                                        <h4 class="agency-home-title text-uppercase mt-4 letter-spacing_6">@item.projectname</h4>
+                                                        <div class="mt-5">
+                                                            <a href="@item.link" target="_blank" class="btn btn-custom">ABOUT PROJECT</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        rowindex = 1;
+
+                    }
+                }
+
+
                 <!-- Slide Two - Set the background image for this slide in the line below -->
-                <div class="carousel-item active" style="background-image:url(../../images/img_Project/BEATNIQ/Materials-for-TP-BNQ-Homepage1.jpg)">
-
-                    <div class="home-center">
-                        <div class="home-desc-center">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="agency-home-content text-center  text-white">
-                                            <p class="agency-home-sub-title text-uppercase f-14 letter-spacing_4">BANGKOK</p>
-                                            <h4 class="agency-home-title text-uppercase mt-4 letter-spacing_6">Beatniq Sukhumvit 32</h4>
-
-                                            <div class="mt-5">
-                                                <a href="~/ProjectDetails/BEATNIQ" target="_blank" class="btn btn-custom">ABOUT PROJECT</a>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item" style="background-image:url(../../images/img_Project/SALADAENGONE/Materials-for-TP-SLD-One-Homepage.jpg)">
-
-                    <div class="home-center">
-                        <div class="home-desc-center">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="agency-home-content text-center  text-white">
-                                            <p class="agency-home-sub-title text-uppercase f-14 letter-spacing_4">BANGKOK</p>
-                                            <h4 class="agency-home-title text-uppercase mt-4 letter-spacing_6">Saladaeng One</h4>
-
-                                            <div class="mt-5">
-                                                <a href="~/ProjectDetails/SALADAENGONE" target="_blank" class="btn btn-custom">ABOUT PROJECT</a>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
                 @*<div class="carousel-item" style="background-image:url(../../images/img_Project/MThonglor10/Materials-for-TP-M-Thonglor-Homepage.jpg)">
 
-                    <div class="home-center">
-                        <div class="home-desc-center">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="agency-home-content text-center  text-white">
-                                            <p class="agency-home-sub-title text-uppercase f-14 letter-spacing_4">BANGKOK</p>
-                                            <h4 class="agency-home-title text-uppercase mt-4 letter-spacing_6">M Thonglor 10</h4>
+            <div class="home-center">
+                <div class="home-desc-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="agency-home-content text-center  text-white">
+                                    <p class="agency-home-sub-title text-uppercase f-14 letter-spacing_4">BANGKOK</p>
+                                    <h4 class="agency-home-title text-uppercase mt-4 letter-spacing_6">M Thonglor 10</h4>
 
-                                            <div class="mt-5">
-                                                <a href="~/ProjectDetails/MThonglor10" target="_blank" class="btn btn-custom">ABOUT PROJECT</a>
-                                            </div>
-
-                                        </div>
+                                    <div class="mt-5">
+                                        <a href="~/ProjectDetails/MThonglor10" target="_blank" class="btn btn-custom">ABOUT PROJECT</a>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
 
 
-                <div class="carousel-item" style="background-image:url(../../images/img_Project/TheMonumentThonglor/Materials-for-TP-THMNMTL-Homepage1.jpg)">
+        <div class="carousel-item" style="background-image:url(../../images/img_Project/TheMonumentThonglor/Materials-for-TP-THMNMTL-Homepage1.jpg)">
 
-                    <div class="home-center">
-                        <div class="home-desc-center">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="agency-home-content text-center  text-white">
-                                            <p class="agency-home-sub-title text-uppercase f-14 letter-spacing_4">BANGKOK</p>
-                                            <h4 class="agency-home-title text-uppercase mt-4 letter-spacing_6">Monument Thonglor</h4>
+            <div class="home-center">
+                <div class="home-desc-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="agency-home-content text-center  text-white">
+                                    <p class="agency-home-sub-title text-uppercase f-14 letter-spacing_4">BANGKOK</p>
+                                    <h4 class="agency-home-title text-uppercase mt-4 letter-spacing_6">Monument Thonglor</h4>
 
-                                            <div class="mt-5">
-                                                <a href="~/ProjectDetails/MONUMENTTHONGLO" target="_blank" class="btn btn-custom">ABOUT PROJECT</a>
-                                            </div>
-
-                                        </div>
+                                    <div class="mt-5">
+                                        <a href="~/ProjectDetails/MONUMENTTHONGLO" target="_blank" class="btn btn-custom">ABOUT PROJECT</a>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>*@
+                </div>
+            </div>
+        </div>*@
                 <!-- Slide Three - Set the background image for this slide in the line below -->
 
             </div>

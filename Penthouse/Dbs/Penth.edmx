@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="HenhaodealModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Henhaodeal.Henhaodeal-Admin.P_bannner_homepage' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="P_bannner_homepage">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="projectname" Type="nvarchar" MaxLength="100" />
+          <Property Name="province" Type="nvarchar" MaxLength="100" />
+          <Property Name="link" Type="nvarchar" MaxLength="200" />
+          <Property Name="_index" Type="int" />
+          <Property Name="createdate" Type="datetime" />
+          <Property Name="createby" Type="nvarchar" MaxLength="50" />
+          <Property Name="updatedate" Type="datetime" />
+          <Property Name="updateby" Type="nvarchar" MaxLength="50" />
+          <Property Name="status" Type="int" />
+          <Property Name="image_url" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityContainer Name="HenhaodealModelStoreContainer">
+          <EntitySet Name="P_bannner_homepage" EntityType="Self.P_bannner_homepage" store:Type="Tables" store:Schema="Henhaodeal-Admin">
+            <DefiningQuery>SELECT 
+    [P_bannner_homepage].[id] AS [id], 
+    [P_bannner_homepage].[projectname] AS [projectname], 
+    [P_bannner_homepage].[province] AS [province], 
+    [P_bannner_homepage].[link] AS [link], 
+    [P_bannner_homepage].[_index] AS [_index], 
+    [P_bannner_homepage].[createdate] AS [createdate], 
+    [P_bannner_homepage].[createby] AS [createby], 
+    [P_bannner_homepage].[updatedate] AS [updatedate], 
+    [P_bannner_homepage].[updateby] AS [updateby], 
+    [P_bannner_homepage].[status] AS [status], 
+    [P_bannner_homepage].[image_url] AS [image_url]
+    FROM [Henhaodeal-Admin].[P_bannner_homepage] AS [P_bannner_homepage]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="HenhaodealModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="P_bannner_homepage">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="projectname" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="province" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="link" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="C_index" Type="Int32" />
+          <Property Name="createdate" Type="DateTime" Precision="3" />
+          <Property Name="createby" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="updatedate" Type="DateTime" Precision="3" />
+          <Property Name="updateby" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="status" Type="Int32" />
+          <Property Name="image_url" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="HenhaodealEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="P_bannner_homepage" EntityType="Self.P_bannner_homepage" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="HenhaodealModelStoreContainer" CdmEntityContainer="HenhaodealEntities">
+          <EntitySetMapping Name="P_bannner_homepage">
+            <EntityTypeMapping TypeName="HenhaodealModel.P_bannner_homepage">
+              <MappingFragment StoreEntitySet="P_bannner_homepage">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="projectname" ColumnName="projectname" />
+                <ScalarProperty Name="province" ColumnName="province" />
+                <ScalarProperty Name="link" ColumnName="link" />
+                <ScalarProperty Name="C_index" ColumnName="_index" />
+                <ScalarProperty Name="createdate" ColumnName="createdate" />
+                <ScalarProperty Name="createby" ColumnName="createby" />
+                <ScalarProperty Name="updatedate" ColumnName="updatedate" />
+                <ScalarProperty Name="updateby" ColumnName="updateby" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="image_url" ColumnName="image_url" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
