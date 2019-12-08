@@ -104,6 +104,13 @@ button:focus {
 
 .text-muted {
     color: #888888 !important;
+
+}
+
+p.textcenter {
+    text-align: justify; /* For Edge */
+    -moz-text-align-last: center; /* For Firefox prior 58.0 */
+    text-align-last: center;
 }
 
 .vertical-content {

@@ -24,8 +24,8 @@
                     </div>
                     <div class="agency-contact-info pl-4">
                         <p class="text-muted" style="padding-top:7px">
-                            Address: Bridge Group (Thailand)<br />
-                            WeWork T-One Building 15th Floor, 8/2 Sukhumvit 40, Khlong Toei,<br />
+                            Bridge Group (Thailand)<br />
+                            Address: WeWork T-One Building 15th Floor, 8/2 Sukhumvit 40, Khlong Toei,<br />
                             Bangkok, 10110 Thailand
 
                         </p>
@@ -73,28 +73,40 @@
     function myMap() {
         var uluru = null;
         var title = null;
-        if (this.window.location.href.indexOf("MONUMENTTHONGLO") > -1) {
-            uluru = { lat: 13.741816, lng: 100.5832273 }
+        if (this.window.location.href.indexOf("MONUMENTTHONGLO") > -1) {//13.741899, 100.585416
+            uluru = { lat: 13.741899, lng: 100.585416 }
             title = "THE MONUMENT THONGLOR";
         }
         else if (this.window.location.href.indexOf("WIRELESS") > -1) {
-            uluru = { lat: 13.741616, lng: 100.546808 }
+            uluru = { lat: 13.741854, lng: 100.546745 }
             title = "98 WIRELESS";
         }
-        else if (this.window.location.href.indexOf("BEATNIQ") > -1) {
-            uluru = { lat: 13.6680182, lng: 100.520846 }
+        else if (this.window.location.href.indexOf("BEATNIQ") > -1) {//13.725922, 100.575515
+            uluru = { lat: 13.725922, lng: 100.575515 }
             title = "BEATNIQ";
         }
-        else if (this.window.location.href.indexOf("SALADAENGONE") > -1) {
-            uluru = { lat: 13.7266751, lng: 100.5391719 }
+        else if (this.window.location.href.indexOf("SALADAENGONE") > -1) {//13.726677, 100.541363
+            uluru = { lat: 13.726677, lng: 100.541363 }
             title = "SALADAENG ONE";
         }
-        else if (this.window.location.href.indexOf("MThonglor10") > -1) {
-            uluru = { lat: 13.7307726, lng: 100.5868107 };
+        else if (this.window.location.href.indexOf("MThonglor10") > -1) {//13.730786, 100.586810
+            uluru = { lat: 13.730786, lng: 100.586810 };
             title = "M THONGLOR 10";
         }
+        else if (this.window.location.href.indexOf("MARQUESUKHUMVIT") > -1) {//13.729917, 100.570880
+            uluru = { lat: 13.729917, lng: 100.570880 };
+            title = "MARQUE SUKHUMVIT";
+        }
+        else if (this.window.location.href.indexOf("LAVIQSUKHUMVIT57") > -1) {//13.724415, 100.580324
+            uluru = { lat: 13.724415, lng: 100.580324 };
+            title = "LAVIQ SUKHUMVIT 57";
+        }
+        else if (this.window.location.href.indexOf("AESTIQTHONGLOR") > -1) {//13.738220, 100.584173
+            uluru = { lat: 13.738220, lng: 100.584173 };
+            title = "AESTIQ THONGLOR";
+        }
         else {
-            uluru = { lat: 13.7224427, lng: 100.5784988 };
+            uluru = { lat: 13.722558, lng: 100.580582 };//13.722558, 100.580582
             title = "Bridge Group (Thailand)";
         }
         //var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
