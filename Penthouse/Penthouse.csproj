@@ -183,6 +183,23 @@
     <Content Include="images\HowToBuy\Thailand-Penthouse-How-to-buy-property1.jpg" />
     <Content Include="images\HowToBuy\Thailand-Penthouse-How-to-buy-property2.jpg" />
     <Content Include="images\HowToBuy\Thailand-Penthouse-How-to-buy-property3.jpg" />
+    <Content Include="images\img_Project\28CHIDLOM\Materials-for-TP-28CL-Gallery1.jpg" />
+    <Content Include="images\img_Project\28CHIDLOM\Materials-for-TP-28CL-Gallery10.jpg" />
+    <Content Include="images\img_Project\28CHIDLOM\Materials-for-TP-28CL-Gallery11.jpg" />
+    <Content Include="images\img_Project\28CHIDLOM\Materials-for-TP-28CL-Gallery2.jpg" />
+    <Content Include="images\img_Project\28CHIDLOM\Materials-for-TP-28CL-Gallery3.jpg" />
+    <Content Include="images\img_Project\28CHIDLOM\Materials-for-TP-28CL-Gallery4.jpg" />
+    <Content Include="images\img_Project\28CHIDLOM\Materials-for-TP-28CL-Gallery5.jpg" />
+    <Content Include="images\img_Project\28CHIDLOM\Materials-for-TP-28CL-Gallery6.jpg" />
+    <Content Include="images\img_Project\28CHIDLOM\Materials-for-TP-28CL-Gallery7.jpg" />
+    <Content Include="images\img_Project\28CHIDLOM\Materials-for-TP-28CL-Gallery8.jpg" />
+    <Content Include="images\img_Project\28CHIDLOM\Materials-for-TP-28CL-Gallery9.jpg" />
+    <Content Include="images\img_Project\28CHIDLOM\Materials-for-TP-28CL-Header.jpg" />
+    <Content Include="images\img_Project\28CHIDLOM\Materials-for-TP-28CL-Homepage.jpg" />
+    <Content Include="images\img_Project\28CHIDLOM\Materials-for-TP-28CL-Homepage2.jpg" />
+    <Content Include="images\img_Project\28CHIDLOM\Materials-for-TP-28CL-Neighborhood-Guide.jpg" />
+    <Content Include="images\img_Project\28CHIDLOM\Materials-for-TP-28CL-Our-Penthouses.jpg" />
+    <Content Include="images\img_Project\28CHIDLOM\Materials-for-TP-28CL-Project-details.jpg" />
     <Content Include="images\img_Project\98WIRELESS\Materials-for-TP-98Wireless-Header.jpg" />
     <Content Include="images\img_Project\98WIRELESS\Materials-for-TP-98Wireless-Homepage1.jpg" />
     <Content Include="images\img_Project\98WIRELESS\Materials-for-TP-98Wireless-Homepage2.jpg" />
@@ -607,6 +624,7 @@
     <Content Include="Views\ProjectDetails\MARQUESUKHUMVIT.cshtml" />
     <Content Include="Views\ProjectDetails\LAVIQSUKHUMVIT57.cshtml" />
     <Content Include="Views\ProjectDetails\AESTIQTHONGLOR.cshtml" />
+    <Content Include="Views\ProjectDetails\TWENTYEIGHTCHIDLOM.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -65,5 +65,9 @@ namespace Penthouse.Controllers
         {
             return View();
         }
+        public ActionResult TWENTYEIGHTCHIDLOM()
+        {
+            return View();
+        }
     }
 }
